@@ -1,0 +1,1055 @@
+1) What does HTML stand for and what is its purpose?
+HTML stands for HyperText Markup Language. It is used to create web pages and tells the browser how to display them. HTML structures content with elements like headings, paragraphs, and lists, and provides semantic meaning for search engines and accessibility tools. It works with CSS for presentation and supports interactivity with elements like forms and multimedia.
+
+2) Describe the basic structure of an HTML document.
+An HTML document has the following structure:
+- `<!DOCTYPE html>`: Declares the document type as HTML5.
+- `<html>`: The root element containing all other elements.
+- `<head>`: Contains metadata like the title, links to CSS, scripts, and character set declarations.
+- `<body>`: Contains the visible content of the page, like text, images, and multimedia.
+
+Example:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My First HTML Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <h4>My Resume</h4>
+    <p>My name is Pallavi.</p>
+</body>
+</html>
+```
+3) What do DOCTYPE and html lang attributes do?
+- `<!DOCTYPE html>`: Tells the browser the document is in HTML5.
+- `lang` attribute: Specifies the language of the document's text content, aiding search engines and accessibility tools.
+
+Example:
+```html
+<html lang="en">
+```
+
+4) What is the difference between head and body tags?
+- `<head>`: Contains metadata and resources like the title, links to CSS, and scripts, which are not directly visible.
+- `<body>`: Contains all the content that is visible to users, such as text, images, and interactive elements.
+
+5) Can you explain the purpose of meta tags in HTML?
+Meta tags provide metadata about an HTML document, aiding SEO, user experience, and content management. Key meta tags include:
+- `title`: Defines the page title.
+- `meta description`: Provides a summary for search engines.
+- `charset`: Specifies character encoding.
+- `viewport`: Ensures responsive design.
+- `robots`: Directs search engine indexing.
+
+6) How do you link a CSS file to an HTML document?
+CSS can be linked in three ways:
+- Inline: Using the `style` attribute within HTML elements.
+- Internal: Using a `<style>` element within the `<head>`.
+- External: Using a `<link>` element within the `<head>`.
+
+Example of external linking:
+```html
+<link rel="stylesheet" href="styles.css">
+```
+
+7) How do you link a JavaScript file to an HTML document?
+Link an external JavaScript file using the `<script>` tag, usually placed at the end of the `<body>` for better performance.
+
+Example:
+```html
+<script src="scripts.js"></script>
+```
+
+8) How do you add a comment in HTML and why would you use them?
+Add a comment using `<!-- comment -->`. Comments are used to explain code, temporarily remove code, debug, collaborate, organize, and document changes.
+
+Example:
+```html
+<!-- This is a comment -->
+```
+
+9) How do you serve your page in multiple languages?
+To serve a page in multiple languages:
+1. Create separate pages for each language.
+2. Use `hreflang` attributes to link alternate language versions.
+3. Provide a language switcher.
+4. Set the `lang` attribute in the `<html>` tag.
+
+Example:
+```html
+<link rel="alternate" hreflang="en" href="http://example.com/en">
+<link rel="alternate" hreflang="es" href="http://example.com/es">
+<html lang="en">
+```
+
+10) What are data-* attributes and when should they be used?
+`data-*` attributes store custom data on HTML elements. They are useful for embedding data that JavaScript can use to enhance user experience without server-side requests.
+
+Example:
+html
+<div data-user-id="12345"></div>
+
+
+Sure, here are the shorter versions of the answers:
+
+11) What is the difference between b and strong tags
+
+**<b> Tag:**
+- **Purpose:** Draws attention to text without implying importance.
+- **Semantics:** Purely stylistic.
+- **Usage Example:** `<b>This text is bold.</b>`
+
+**<strong> Tag:**
+- **Purpose:** Indicates text is of strong importance.
+- **Semantics:** Conveys importance, and assistive technologies may emphasize it.
+- **Usage Example:** `<strong>This text is important and bold.</strong>`
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example of b and strong tags</title>
+</head>
+<body>
+    <p>This is an example of the <b>b tag</b>.</p>
+    <p>This is an example of the <strong>strong tag</strong>.</p>
+</body>
+</html>
+```
+
+12) When would you use em over i, and vice versa?
+
+**<i> Tag:**
+- **Purpose:** Italicizes text for stylistic reasons.
+- **Usage Example:** `<i>Iron Man</i> is a hero.`
+
+**<em> Tag:**
+- **Purpose:** Emphasizes text with importance.
+- **Usage Example:** `Gfg is the <em>best</em> educational site.`
+
+**Example:**
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>em vs i Tag</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>GeeksforGeeks</h1>
+    <p><i>Iron Man</i> is a hero.</p>
+    <p>Gfg is the <em>best</em> educational site.</p>
+</body>
+</html>
+```
+
+13) What is the purpose of small, s, and mark tags?
+
+**<small> Tag:**
+- **Purpose:** Defines smaller text, often used for less important content.
+- **Usage Example:** `<small>This is smaller text.</small>`
+
+**<s> Tag:**
+- **Purpose:** Represents text that is no longer accurate or relevant.
+- **Usage Example:** `<s>This text is no longer accurate.</s>`
+
+**<mark> Tag:**
+- **Purpose:** Highlights text to draw attention.
+- **Usage Example:** `<mark>Important information</mark>`
+
+14) What are semantic HTML tags and why are they important?
+
+Semantic HTML tags define the meaning of the content they contain, making the structure and role of the content clear.
+
+**Examples of Semantic Tags:**
+- **<header>:** Introductory content.
+- **<nav>:** Navigation links.
+- **<main>:** Main content.
+- **<article>:** Independent content.
+- **<section>:** Group of related content.
+- **<aside>:** Less important content.
+- **<footer>:** Footer content.
+
+15) How do you create a paragraph or a line break in HTML
+
+Paragraph (<p>):
+-Usage Example: `<p>This is a paragraph.</p>`
+
+Line Break (<br>):
+- Usage Example: `This is the first line.<br> This is the second line.`
+
+16) How do you create a hyperlink in HTML?
+
+Hyperlink:
+Usage Example `<a href="https://www.example.com">Visit Example</a>`
+
+17) What is the difference between relative and absolute URLs?
+
+Absolute URLs:
+-Usage Example:`https://www.example.com/about-us`
+
+Relative URLs:
+- Usage Example: `about-us.html`
+
+18) How can you open a link in a new tab?
+
+Usage Example: `<a href="https://www.example.com" target="_blank">Visit Example</a>`
+19) How do you create an anchor to jump to a specific part of the page?
+
+Create the anchor target:
+- Usage Example: `<h2 id="section1">Section 1</h2>`
+
+Create the link to jump to the anchor:
+- **Usage Example:** `<a href="#section1">Jump to Section 1</a>`
+
+20) How do you link to a downloadable file in HTML?
+
+Usage Example: `<a href="path/to/yourfile.zip" download="filename.zip">Download File</a>`
+
+Sure, here are the shorter versions of the answers:
+
+**21) What is the importance of the alt attribute for images?**
+
+**Accessibility:** Describes images to visually impaired users using screen readers.
+
+**SEO:** Helps search engines understand the content of images, improving search rankings.
+
+**Fallback:** Displays text if the image fails to load.
+
+**Example:**
+```html
+<img src="broken-link.jpg" alt="A fallback description if the image fails to load">
+```
+
+**22) What image formats are supported by web browsers?**
+
+- **JPEG/JPG:** Good for photos; lossy compression.
+- **PNG:** Supports transparency; lossless compression.
+- **GIF:** Supports animation; limited to 256 colors.
+- **SVG:** Scalable; good for logos and icons.
+- **WebP:** Superior compression; supports transparency and animation.
+- **BMP and TIFF:** Lossless quality; large file sizes.
+
+**23) How do you create image maps in HTML?**
+
+Image maps make specific areas of an image clickable using `<map>` and `<area>` elements.
+
+**Example:**
+```html
+<img src="example-image.jpg" usemap="#examplemap">
+<map name="examplemap">
+  <area shape="rect" coords="34,44,270,350" alt="Rectangle Area" href="link1.html">
+  <area shape="circle" coords="130,136,60" alt="Circle Area" href="link2.html">
+  <area shape="poly" coords="63,27,90,130,160,90" alt="Polygon Area" href="link3.html">
+</map>
+```
+
+**24) What is the difference between svg and canvas elements?**
+
+**SVG (Scalable Vector Graphics):**
+- **Nature:** XML-based vector graphics.
+- **Resolution:** Scalable without loss of quality.
+- **Interaction:** Part of the DOM; can be styled with CSS and manipulated with JavaScript.
+- **Use Case:** Ideal for scalable graphics like logos and icons.
+
+**Example:**
+```html
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+```
+
+**Canvas:**
+- **Nature:** Bitmap graphics via JavaScript.
+- **Resolution:** Resolution-dependent.
+- **Interaction:** Not part of the DOM; interaction managed with JavaScript.
+- **Use Case:** Suitable for dynamic graphics like games and animations.
+
+**Example:**
+```html
+<canvas id="myCanvas" width="200" height="100"></canvas>
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  ctx.fillStyle = "#FF0000";
+  ctx.fillRect(0, 0, 150, 75);
+</script>
+```
+
+**25) What are the different types of lists available in HTML?**
+
+- **Ordered list (<ol>):** Numbered list.
+- **Unordered list (<ul>):** Bulleted list.
+- **Description list (<dl>):** List of terms and descriptions.
+
+**26) How do you create ordered, unordered, and description lists in HTML?**
+
+**Ordered List:**
+```html
+<ol> 
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+
+**Unordered List:**
+```html
+<ul> 
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+**Description List:**
+```html
+<dl>
+  <dt>Term 1</dt>
+  <dd>Description of Term 1</dd>
+  <dt>Term 2</dt>
+  <dd>Description of Term 2</dd>
+</dl>
+```
+
+**27) Can lists be nested in HTML? If so, how?**
+
+Yes, lists can be nested.
+
+**Example:**
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2
+    <ul>
+      <li>Subitem 1</li>
+      <li>Subitem 2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+```
+
+**28) What attributes can you use with lists to modify their appearance or behavior?**
+
+**Ordered List (<ol>):**
+- **type:** Specifies numbering type (e.g., "1", "A").
+- **start:** Specifies starting number.
+
+**Unordered List (<ul>):**
+- No specific attributes for unordered lists other than standard attributes like `class` or `id`.
+
+**List Item (<li>):**
+- **value:** Specifies the value of an individual list item within an ordered list.
+
+**29) What are HTML forms and how do you create one?**
+
+HTML forms collect user input and submit it to a server.
+
+**Example:**
+```html
+<form action="/submit-form" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  
+  <label for="remember">Remember me:</label>
+  <input type="checkbox" id="remember" name="remember"><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+```
+
+**30) Describe the different form input types in HTML5.**
+
+HTML5 provides various input types for better user interaction.
+
+**Examples:**
+- **Text:** `<input type="text" id="name" name="name">`
+- **Email:** `<input type="email" id="email" name="email">`
+- **Checkbox:** `<input type="checkbox" id="terms" name="terms">`
+- **Radio:** `<input type="radio" id="male" name="gender">`
+
+**Complete Form Example:**
+```html
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="checkbox" id="terms" name="terms">
+  <label for="terms">Accept terms and conditions</label><br><br>
+  <input type="radio" id="male" name="gender">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender">
+  <label for="female">Female</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+31) **How do you make form inputs required?**
+Use the `required` attribute in the input tag:
+```html
+<input type="text" required>
+```
+
+32) **What is the purpose of the label element in forms?**
+The `<label>` element associates descriptive text with form inputs, enhancing usability and accessibility by improving interaction and readability for screen readers.
+
+33) **How do you group form inputs and why?**
+Grouping form inputs with `<fieldset>` and `<legend>` organizes related fields, enhances visual clarity, adds semantic meaning, aids validation, and improves accessibility:
+```html
+<fieldset>
+  <legend>Personal Information</legend>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+</fieldset>
+```
+
+34) **What is new in HTML5 compared to previous versions?**
+HTML5 introduced semantic elements (e.g., `<header>`, `<footer>`), new form input types (e.g., `<input type="email">`), native audio/video support, `<canvas>` for graphics, local storage, offline capabilities, improved APIs (e.g., Geolocation), and enhanced accessibility and SEO features.
+
+35) **How do you create a section on a webpage using HTML5 semantic elements?**
+Use semantic elements like `<section>` to define content areas:
+```html
+<section>
+  <h2>Section Title</h2>
+  <p>This is the section content.</p>
+</section>
+```
+Additional elements like `<header>`, `<article>`, and `<footer>` can further structure content.
+
+36) **What is the role of the article element in HTML5?**
+The `<article>` element defines self-contained content that can be independently distributed or reused, enhancing accessibility, SEO, and content structure:
+```html
+<article>
+  <h2>Article Title</h2>
+  <p>Article content...</p>
+</article>
+```
+
+37) **Can you explain the use of the nav and aside elements in HTML5?**
+- `<nav>`: Defines a section for navigation links:
+  ```html
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+  </nav>
+  ```
+- `<aside>`: Contains content related to the main content, like sidebars or advertisements:
+  ```html
+  <aside>
+    <p>Related content or ads...</p>
+  </aside>
+  ```
+
+38) **How do you use the figure and figcaption elements?**
+The `<figure>` element encapsulates media content, while `<figcaption>` provides a caption:
+```html
+<figure>
+  <img src="image.jpg" alt="Description">
+  <figcaption>Image caption</figcaption>
+</figure>
+```
+
+39) **How do you create a table in HTML?**
+Use `<table>`, `<tr>` for rows, `<th>` for headers, and `<td>` for data cells:
+```html
+<table>
+  <caption>Monthly Sales</caption>
+  <tr>
+    <th>Month</th>
+    <th>Revenue</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$10,000</td>
+  </tr>
+</table>
+```
+
+40) **What are thead, tbody, and tfoot in a table?**
+- `<thead>`: Groups header rows.
+- `<tbody>`: Groups the main content rows.
+- `<tfoot>`: Groups footer rows, often for summaries or totals.
+```html
+<table>
+  <thead>
+    <tr><th>Header</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Data</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td>Footer</td></tr>
+  </tfoot>
+</table>
+```
+Sure, here are the shorter versions of each answer:
+
+**41) What is a colspan and rowspan?**
+
+**Colspan**: Merges a cell across multiple columns in a table.
+```html
+<td colspan="3">Merged Cell</td>
+```
+**Rowspan**: Merges a cell across multiple rows in a table.
+```html
+<td rowspan="2">Merged Cell</td>
+```
+
+**42) How do you make a table accessible?**
+
+1. Use semantic HTML elements like `<table>`, `<thead>`, `<tbody>`, etc.
+2. Provide table headers with `<th>` and use the `scope` attribute.
+
+**43) How can tables be made responsive?**
+
+1. Enable horizontal scrolling with CSS.
+2. Use media queries to adjust layout.
+3. Apply Flexbox or Grid for flexible layouts.
+4. Change table elements to block display for stacking on small screens.
+
+**44) How do you add audio and video to an HTML document?**
+
+**Audio**:
+```html
+<audio controls>
+  <source src="audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+**Video**:
+```html
+<video controls width="640" height="360">
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+```
+
+**45) What are the attributes of the video and audio elements?**
+
+**Video** and **Audio** attributes:
+- `controls`: Adds playback controls.
+- `autoplay`: Automatically starts playback.
+- `loop`: Loops the media.
+- `muted`: Mutes the audio.
+- `poster` (for video): Specifies an image to show before playback.
+
+**46) How do you provide subtitles or captions for video content in HTML?**
+
+Use the `<track>` element inside `<video>`:
+```html
+<video controls>
+  <source src="video.mp4" type="video/mp4">
+  <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+  Your browser does not support the video tag.
+</video>
+```
+
+**47) What’s the difference between embedding and linking media?**
+
+**Embedding**: Displays media directly on the webpage using tags like `<audio>`, `<video>`, `<img>`.
+**Linking**: Provides a hyperlink to the media file, opening it in a new tab or window.
+
+**48) What is a viewport and how can you set it?**
+
+The viewport is the visible area of a web page on a device's screen. Set it with the `<meta>` tag:
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+**49) Can you describe the use of media queries in HTML?**
+
+Media queries apply different styles based on device characteristics. Example:
+```css
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+```
+
+**50) How do you create responsive images with different resolutions for different devices?**
+
+**Using `<picture>`**:
+```html
+<picture>
+  <source media="(max-width: 600px)" srcset="small.jpg">
+  <source media="(min-width: 601px)" srcset="large.jpg">
+  <img src="default.jpg" alt="Responsive image">
+</picture>
+```
+**Using `srcset`**:
+```html
+<img src="default.jpg" srcset="small.jpg 600w, large.jpg 1200w" sizes="(max-width: 600px) 600px, 1200px" alt="Responsive image">
+```
+
+**51) What is responsive web design?**
+
+Responsive web design ensures web pages look good on all devices using flexible layouts, images, and CSS media queries.
+
+**52) How do flexbox and grids help in creating responsive layouts?**
+
+**Flexbox**: For one-dimensional layouts.
+```css
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+**CSS Grid**: For two-dimensional layouts.
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+```
+
+**53) What is accessibility and why is it important in web development?**
+
+Accessibility ensures websites can be used by people of all abilities. It improves inclusivity, complies with legal requirements, enhances user experience, and benefits SEO.
+
+**54) How do you make a website accessible?**
+
+1. Use semantic HTML.
+2. Provide alt text for images.
+3. Ensure keyboard accessibility.
+4. Use ARIA roles.
+5. Provide captions and transcripts.
+6. Ensure color contrast.
+7. Make links and buttons clear.
+
+**55) What are ARIA roles and how do you use them?**
+
+ARIA roles enhance accessibility by defining the roles of elements for assistive technologies. Example:
+```html
+<div role="banner">Site Banner</div>
+```
+
+**56) Explain how to use the tabindex attribute.**
+
+The `tabindex` attribute controls the tab order of elements. Example:
+```html
+<button tabindex="1">First</button>
+<button tabindex="2">Second</button>
+```
+
+**57) How do you ensure your images are accessible?**
+
+1. Use descriptive `alt` text.
+2. Use `aria-hidden="true"` for decorative images.
+3. Provide image captions.
+4. Ensure color contrast.
+5. Use responsive image techniques.
+
+**58) How do you make a navigation bar in HTML?**
+
+```html
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+```
+
+**59) What’s the significance of breadcrumb navigation?**
+
+Breadcrumb navigation shows the user's location in the site hierarchy, improving navigation and usability. Example: Home > Products > Category > Item.
+
+**60) How do you create a dropdown menu in HTML?**
+
+```html
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a>
+      <ul>
+        <li><a href="#service1">Service 1</a></li>
+        <li><a href="#service2">Service 2</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+```
+Use CSS to style and manage the dropdown behavior.
+
+61) **Explain the use of the target attribute in a link.**
+**ANS:** The target attribute specifies where to open the linked document. Common values include:
+- **_self:** Default. Opens in the same frame/window.
+- **_blank:** Opens in a new tab/window.
+- **_parent:** Opens in the parent frame.
+- **_top:** Opens in the full window.
+```html
+<a href="https://example.com" target="_blank">Visit Example</a>
+```
+
+62) **How do you create a slidedown menu?**
+**ANS:** Use CSS for animation and JavaScript to toggle display.
+**HTML:**
+```html
+<button onclick="toggleMenu()">Toggle Menu</button>
+<ul id="slidedown-menu">
+  <li><a href="#item1">Item 1</a></li>
+  <li><a href="#item2">Item 2</a></li>
+  <li><a href="#item3">Item 3</a></li>
+</ul>
+```
+**CSS:**
+```css
+#slidedown-menu { display: none; transition: height 0.3s ease-out; }
+```
+**JavaScript:**
+```js
+function toggleMenu() {
+  var menu = document.getElementById('slidedown-menu');
+  menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+}
+```
+
+63) **What are Web Components and how are they used?**
+**ANS:** Web Components are APIs that let you create reusable custom HTML elements, encapsulate them with Shadow DOM, and use HTML templates. They improve modularity and maintainability in web development.
+
+64) **What is Shadow DOM and how do you use it?**
+**ANS:** Shadow DOM encapsulates part of the DOM tree, isolating styles and scripts.
+**Usage:**
+```html
+<my-component></my-component>
+<script>
+  class MyComponent extends HTMLElement {
+    constructor() {
+      super();
+      const shadow = this.attachShadow({ mode: 'open' });
+      shadow.innerHTML = `<style>p { color: red; }</style><p>Shadow DOM content</p>`;
+    }
+  }
+  customElements.define('my-component', MyComponent);
+</script>
+```
+
+65) **How do you create a custom HTML element?**
+**ANS:** Use the Custom Elements API.
+**Example:**
+```html
+<my-element></my-element>
+<script>
+  class MyElement extends HTMLElement {
+    constructor() {
+      super();
+      this.innerHTML = '<p>Hello, custom element!</p>';
+    }
+  }
+  customElements.define('my-element', MyElement);
+</script>
+```
+
+66) **Explain HTML templates and their use cases.**
+**ANS:** HTML templates define reusable HTML fragments that aren't rendered immediately.
+**Example:**
+```html
+<template id="my-template">
+  <div>
+    <h2>Template Content</h2>
+    <p>This is a paragraph inside the template.</p>
+  </div>
+</template>
+<script>
+  const template = document.getElementById('my-template').content.cloneNode(true);
+  document.body.appendChild(template);
+</script>
+```
+
+67) **How do you use server-sent events?**
+**ANS:** Server-Sent Events (SSE) enable web pages to receive updates from a server.
+**Example:**
+```html
+<script>
+  const eventSource = new EventSource('https://example.com/events');
+  eventSource.onmessage = (event) => {
+    console.log('New message from server:', event.data);
+  };
+</script>
+```
+
+68) **How do you optimize HTML for search engines?**
+**ANS:**
+- Use semantic HTML tags.
+- Include meaningful meta tags.
+- Use descriptive, keyword-rich headings and content.
+- Ensure fast load times.
+- Implement structured data.
+
+69) **What is semantic HTML and how does it relate to SEO?**
+**ANS:** Semantic HTML uses tags that describe their meaning, improving accessibility, code readability, and SEO.
+
+70) **Explain the significance of heading tags for SEO.**
+**ANS:** Heading tags (<h1> to <h6>) provide a clear content structure and help search engines understand the main topics.
+
+71) **How do structured data and schemas enhance SEO?**
+**ANS:** Structured data and schemas (e.g., Schema.org) help search engines understand the content, enhancing search results with rich snippets.
+
+72) **What are the best practices for using HTML with SEO?**
+**ANS:**
+- Use semantic HTML tags.
+- Provide descriptive meta tags.
+- Ensure fast load times.
+- Create mobile-friendly designs.
+- Use alt attributes for images.
+- Implement structured data.
+
+73) **What is the Geolocation API and how is it used?**
+**ANS:** The Geolocation API provides the geographical location of the device.
+**Example:**
+```html
+<script>
+  navigator.geolocation.getCurrentPosition((position) => {
+    console.log('Latitude:', position.coords.latitude);
+    console.log('Longitude:', position.coords.longitude);
+  });
+</script>
+```
+
+74) **How do you utilize local storage and session storage in HTML?**
+**ANS:** Local storage persists data after the browser is closed, while session storage persists data only for the session.
+**Example:**
+```html
+<script>
+  localStorage.setItem('key', 'value');
+  console.log(localStorage.getItem('key')); // 'value'
+  sessionStorage.setItem('key', 'value');
+  console.log(sessionStorage.getItem('key')); // 'value'
+</script>
+```
+
+75) **Can you describe the use of the Drag and Drop API?**
+**ANS:** The Drag and Drop API allows elements to be dragged and dropped.
+**Example:**
+```html
+<div id="drag" draggable="true">Drag me</div>
+<div id="drop" ondrop="drop(event)" ondragover="allowDrop(event)">Drop here</div>
+<script>
+  function allowDrop(event) { event.preventDefault(); }
+  document.getElementById('drag').ondragstart = function(event) {
+    event.dataTransfer.setData('text', event.target.id);
+  }
+  function drop(event) {
+    event.preventDefault();
+    const data = event.dataTransfer.getData('text');
+    event.target.appendChild(document.getElementById(data));
+  }
+</script>
+```
+
+76) **What is the Fullscreen API and why would you use it?**
+**ANS:** The Fullscreen API allows an element to be displayed in full-screen mode.
+**Example:**
+```html
+<button onclick="openFullscreen()">Open Fullscreen</button>
+<div id="fullscreenElement">Content</div>
+<script>
+  const elem = document.getElementById('fullscreenElement');
+  function openFullscreen() {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) {
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      elem.msRequestFullscreen();
+    }
+  }
+</script>
+```
+
+77) **How do you handle character encoding in HTML?**
+**ANS:** Use the `<meta charset="UTF-8">` tag in the `<head>` section.
+**Example:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Encoding</title>
+</head>
+<body>
+  <p>Example text with special characters: ñ, é, ü</p>
+</body>
+</html>
+```
+
+78) **What is the lang attribute and its importance in HTML?**
+**ANS:** The lang attribute specifies the document's language, improving accessibility and SEO.
+**Example:**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document Language</title>
+</head>
+<body>
+  <p>Hello, world!</p>
+</body>
+</html>
+```
+
+79) **How do you accommodate left-to-right and right-to-left language support in HTML?**
+**ANS:** Use the dir attribute.
+**Example:**
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Left-to-Right</title>
+</head>
+<body>
+  <p>This text is left-to-right.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Right-to-Left</title>
+</head>
+<body>
+  <p>This text is right-to-left.</p>
+</body>
+</html>
+```
+
+80) **How do you validate HTML?**
+**ANS:** Use online validators like the W3C Markup Validation Service to check the syntax and structure of HTML documents against web standards.
+Sure, here are shorter versions of the answers:
+
+81) **Benefits of Using Pug (Jade)**:
+   - Simplified syntax for cleaner code.
+   - Code reusability with mixins and includes.
+   - Faster development with less boilerplate code.
+
+82) **How Templating Engines Work with HTML**:
+   - Templating engines embed dynamic content into HTML templates.
+   - Example using EJS:
+     ```html
+     <!DOCTYPE html>
+     <html>
+     <head>
+       <title><%= title %></title>
+     </head>
+     <body>
+       <h1><%= heading %></h1>
+       <p><%= message %></p>
+     </body>
+     </html>
+     ```
+
+83) Browser Developer Tools
+   - Tools to inspect and debug HTML, CSS, and JavaScript.
+   - Use Elements panel to inspect and modify HTML.
+   - Console panel for JavaScript debugging.
+   - Network panel for analyzing network requests.
+
+84) Common Bad Practices in HTML
+   - Using inline styles and scripts.
+   - Overusing non-semantic tags like `<div>` and `<span>`.
+   - Neglecting accessibility features (e.g., missing `alt` attributes for images).
+   - Writing unstructured or invalid HTML.
+   - Ignoring performance optimizations.
+
+85) Ensuring Best Practices in HTML
+   - Use semantic HTML tags.
+   - Validate HTML with tools like W3C Validator.
+   - Follow accessibility guidelines (WCAG).
+   - Optimize performance (e.g., minify files, optimize images).
+   - Keep code clean and well-organized.
+
+86)Benefits of Minifying HTML
+   - Reduces file size.
+   - Faster load times.
+   - Improved performance, especially on mobile.
+   - Decreases bandwidth usage.
+
+87) Optimizing HTML Page Loading Time
+   - Minify HTML, CSS, and JavaScript.
+   - Optimize images.
+   - Use lazy loading for images and iframes.
+   - Implement caching strategies.
+   - Utilize a Content Delivery Network (CDN).
+   - Reduce HTTP requests.
+
+88)Popular CSS Frameworks for HTML Integration
+   - Bootstrap
+   - Foundation
+   - Bulma
+   - Tailwind CSS
+   - Materialize
+
+89)Simplification of HTML Development with Bootstrap
+   - Provides predefined CSS classes for layout, typography, and components.
+   - Includes a responsive grid system.
+   - Offers JavaScript plugins for interactive elements.
+   - Ensures consistent design and style.
+
+90)JavaScript Libraries Enhancing HTML Interactivity
+   - jQuery
+   - React
+   - Angular
+   - Vue.js
+   - D3.js
+
+91) Implementing Data Visualizations in HTML
+   - Use libraries like Chart.js, D3.js, or Google Charts.
+   - Embed SVG or canvas elements for graphics.
+
+92) Applying Progressive Enhancement in HTML
+   - Start with basic functional HTML.
+   - Add CSS for styling.
+   - Enhance with JavaScript for interactivity.
+
+93)Interconnection of HTML, CSS, and JavaScript
+   - HTML provides structure.
+   - CSS styles elements.
+   - JavaScript adds interactivity.
+
+94) Importance of Documentation in HTML
+   - Facilitates code maintenance and understanding.
+   - Aids collaboration among developers.
+   - Ensures consistency and adherence to best practices.
+
+95)Updates in HTML 5.1 and 5.2
+   - HTML 5.1: Added new elements, improved semantics, and new input types.
+   - HTML 5.2: Introduced `<dialog>`, enhanced security, and payment request handling.
+
+96)Future Updates for HTML:
+   - Enhanced web components support.
+   - Improved accessibility and form controls.
+   - Integration with emerging web technologies.
+
+97)HTML Evolution with Web Standards
+   - Evolves through collaboration with browser vendors and standards organizations.
+   - Adapts to new technologies and user needs as a Living Standard.
+
+98) Living Standard and HTML
+   - HTML evolves continuously rather than in fixed versions.
+   - Updated through ongoing work by organizations like WHATWG, ensuring current web standards are met.
